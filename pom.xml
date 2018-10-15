@@ -2,19 +2,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.opdion.tools</groupId>
-	<artifactId>PrettyPrint</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.connectplaza.tools</groupId>
+	<artifactId>gedit-pretty-print</artifactId>
+	<version>0.0.1</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.0</version>
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.opdion.tools.PrettyPrint</mainClass>
+							<mainClass>com.connectplaza.tools.PrettyPrint</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
